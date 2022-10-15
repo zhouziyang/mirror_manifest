@@ -4,7 +4,7 @@ ROOT=`realpath ../..`
 
 # AOSP repos
 repos=(external/selinux external/minijail frameworks/av frameworks/base frameworks/native
-    system/core system/libhwbinder system/libvintf system/netd system/vold)
+    system/core system/libhwbinder system/libvintf system/netd system/vold system/libvintf)
 
 for repo in "${repos[@]}"
 do
