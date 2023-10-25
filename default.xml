@@ -2,7 +2,14 @@
 <manifest>
     <remote name="redroid" fetch="https://github.com/remote-android/" />
 
-    <project name="device_redroid-prebuilts" remote="redroid" revision="master" />
+    <default revision="master" remote="redroid" sync-j="4" />
+
+    <project name="device_redroid" remote="redroid" />
+    <project name="device_redroid-prebuilts" remote="redroid" />
+    <project name="redroid-c2" remote="redroid" />
+    <project name="redroid-gatekeeper" remote="redroid" />
+    <project name="redroid-omx" remote="redroid" />
+    <project name="vendor_redroid" remote="redroid" />
 
     <include name="webview.xml" />
 
