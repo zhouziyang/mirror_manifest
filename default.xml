@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="redroid" fetch="https://github.com/remote-android/" />
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
-  <default revision="master"
-           remote="aosp"
-           sync-j="4" />
+    <project name="device_redroid" remote="redroid" />
+    <project name="device_redroid-prebuilts" remote="redroid" />
+    <project name="redroid-c2" remote="redroid" />
+    <project name="redroid-gatekeeper" remote="redroid" />
+    <project name="redroid-omx" remote="redroid" />
+    <project name="vendor_redroid" remote="redroid" />
 
-  <!-- only include modified repos -->
-  <project name="platform/external/selinux" />
-  <project name="platform/external/minijail" />
-  <project name="platform/frameworks/av" />
-  <project name="platform/frameworks/base" />
-  <project name="platform/frameworks/native" />
-  <project name="platform/manifest" />
-  <project name="platform/system/core" />
-  <project name="platform/system/libhwbinder" />
-  <project name="platform/system/libvintf" />
-  <project name="platform/system/netd" />
-  <project name="platform/system/vold" />
+    <include name="webview.xml" />
 
-  <include name="redroid.xml" />
 </manifest>
